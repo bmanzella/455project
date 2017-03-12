@@ -6,6 +6,8 @@
 
 # FTP Config for Atom
 .ftpconfig
+.htaccess
+.htpasswd
 
 # User-specific stuff:
 .idea/**/workspace.xml
