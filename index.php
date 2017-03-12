@@ -1,2 +1,1 @@
-<?php header('Location: /455project/455project/views/home.php');
- ?>
+<?php header('Location: /455project/455project/views/home.php');?>

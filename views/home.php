@@ -7,15 +7,19 @@ include 'navbar.php';
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-<div class="container">
-<h1>Welcome!</h1>
-<p>This is AutoMatic </p>
-<p><a class="btn btn-primary btn-lg" href="about.php" role="button">Learn more &raquo;</a></p>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img style="margin-left:350px" src="../img/logo.png" alt="Logo">
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container">
 <!-- Example row of columns -->
+<h1>Hottest Deals</h1>
+<hr>
 <div class="row">
 <div class="col-md-4">
   <h2>Heading</h2>
