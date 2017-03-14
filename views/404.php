@@ -4,12 +4,18 @@ include 'views/header.php';
 include 'views/navbar.php';
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <br>
 <body>
-    <div class="row"
+    <div class="row">
      <div class="container">
       <div class="alert alert-warning">
         <div class="row">

@@ -1,5 +1,5 @@
 <?php
-$title = 'About';
+$title = 'Contact Us';
 include 'header.php';
 include 'navbar.php';
 
