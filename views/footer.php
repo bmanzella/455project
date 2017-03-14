@@ -1,9 +1,12 @@
-
+<hr>
 <footer>
-<p>&copy;  2017 Logo By:<a href="http://logomakr.com">Logo Maker</a></p>
-<p>AutoMatic - <`versionNumber`> - <`latestCommit`> (commitTime)</p>
+  <div style="float:none;margin-left:auto;margin-right:auto;width:75%;text-align:center" class="panel panel-default">
+    <div class="panel-body">
+      <p>&copy;  2017 Logo By:<a href="http://logomakr.com">Logo Maker</a></p>
+    </div>
+  </div>
 </footer>
-</div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
 <script src="../js/vendor/bootstrap.min.js"></script>

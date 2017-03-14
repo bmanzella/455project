@@ -38,6 +38,4 @@ include 'navbar.php';
 </div>
 </div>
 
-<hr>
-
 <?php include 'footer.php'; ?>
