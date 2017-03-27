@@ -1,4 +1,3 @@
-
 <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -12,6 +11,11 @@
     <span class="icon-bar"></span>
   </button>
   <?php
+  function activePage ($pageName = '', $currentPage = '') {
+        if($pageName == $currentPage) {
+          echo 'active';
+        }
+    }
   if (
     $title == 'Admin Home' ||
     $title == 'Vehicle Management' ||
@@ -33,17 +37,17 @@
       $title == 'Deal Management'
     ) {
       ?>
-      <li><a href="../views/home.php">Home</a></li>
-      <li><a href="../views/about.php">About</a></li>
+      <li class=""><a href="../views/home.php">Home</a></li>
+      <li class=""><a href="../views/about.php">About</a></li>
       <li><a href="../views/vehicles.php">Vehicle Inventory</a></li>
       <li><a href="../views/contact.php">Contact</a></li>
       <?php
     } else {
       ?>
-      <li><a href="home.php">Home</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="vehicles.php">Vehicle Inventory</a></li>
-      <li><a href="contact.php">Contact</a></li>
+      <li class="<?php activePage('Home', $title) ?>"><a href="home.php">Home</a></li>
+      <li class="<?php echo isset($title) && $title == 'About' ? 'active' : '' ?>"><a href="about.php">About</a></li>
+      <li class="<?php echo isset($title) && $title == 'Vehicle Inventory' ? 'active' : '' ?>"><a href="vehicles.php">Vehicle Inventory</a></li>
+      <li class="<?php echo isset($title) && $title == 'Contact Us' ? 'active' : '' ?>"><a href="contact.php">Contact</a></li>
   <?php  }
     ?>
   </ul>
