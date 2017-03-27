@@ -1,7 +1,7 @@
 <?php
 $title = '404 Error';
-include 'views/header.php';
-include 'views/navbar.php';
+include 'header.php';
+include 'navbar.php';
 
 ?>
 
@@ -20,7 +20,7 @@ include 'views/navbar.php';
       <div class="alert alert-warning">
         <div class="row">
           <div class="col-md-2">
-            <img src="img/yoda.jpg" style="width:100%">
+            <img src="../img/yoda.jpg" style="width:100%">
           </div>
           <div class="col-md-10">
             <h2>Lost a page I have.</h2>
@@ -33,4 +33,4 @@ include 'views/navbar.php';
     </div>
 
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
-<?php include 'views/footer.php'; ?>
+<?php include 'footer.php'; ?>
