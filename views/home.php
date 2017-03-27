@@ -10,7 +10,7 @@ include 'navbar.php';
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img style="margin-left:350px" src="../img/logo.png" alt="Logo">
+        <img style="position:relative" src="../img/logo.png" alt="Logo">
       </div>
     </div>
   </div>

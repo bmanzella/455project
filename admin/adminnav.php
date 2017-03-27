@@ -1,10 +1,18 @@
 <br>
+<?php
+    function activePage ($pageName = '', $currentPage = '') {
+        if($pageName == $currentPage) {
+            echo 'active';
+        }
+    }
+?>
+
 <div class="tabbable">
     <ul style="padding:5px" class="nav nav-pills">
-      <li role="presentation" class="active"><a href="index.php">Home</a></li>
-      <li role="presentation"><a href="vehiclemgt.php">Vehicle Management</a></li>
-      <li role="presentation"><a href="dealmgt.php">Home Page Management</a></li>
-      <li class="disabled" role="presentation"><a href="#">Statistics</a></li>
+      <li role="presentation" class="<?php activePage('Admin Home', $title) ?>"><a href="index.php">Admin Home</a></li>
+      <li role="presentation" class="<?php echo isset($title) && $title == 'Vehicle Management' ? 'active' : '' ?>"><a href="vehiclemgt.php">Vehicle Management</a></li>
+      <li role="presentation" class="<?php echo isset($title) && $title == 'Home Page Management' ? 'active' : '' ?>"><a href="dealmgt.php">Home Page Management</a></li>
+      <li class="disabled" role="presentation" class="<?php echo isset($title) && $title == 'Statistics' ? 'active' : '' ?>"><a href="statistics.php">Statistics</a></li>
     </ul>
     <hr>
   </div>
