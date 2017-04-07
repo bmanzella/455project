@@ -11,7 +11,7 @@
     <span class="icon-bar"></span>
   </button>
   <?php
-  function activePage ($pageName = '', $currentPage = '') {
+  function activePageMain ($pageName = '', $currentPage = '') {
         if($pageName == $currentPage) {
           echo 'active';
         }
@@ -44,7 +44,7 @@
       <?php
     } else {
       ?>
-      <li class="<?php activePage('Home', $title) ?>"><a href="home.php">Home</a></li>
+      <li class="<?php activePageMain('Home', $title) ?>"><a href="home.php">Home</a></li>
       <li class="<?php echo isset($title) && $title == 'About' ? 'active' : '' ?>"><a href="about.php">About</a></li>
       <li class="<?php echo isset($title) && $title == 'Vehicle Inventory' ? 'active' : '' ?>"><a href="vehicles.php">Vehicle Inventory</a></li>
       <li class="<?php echo isset($title) && $title == 'Contact Us' ? 'active' : '' ?>"><a href="contact.php">Contact</a></li>
@@ -52,18 +52,7 @@
     ?>
   </ul>
   <form class="navbar-form navbar-right" role="form">
-    <?php
-      if (
-        $title == 'Admin Home' ||
-        $title == 'Vehicle Management' ||
-        $title == 'Deal Management'
-      ) {
-        ?> <p style="color:white;margin-top:10px">Welcome, Administrator</p> <?php
-      } else {
-        ?><button type="submit" formaction="../admin/index.php"class="btn btn-success">Login</button><?php
-      }
-
-     ?>
+      <button type="submit" formaction="../admin/index.php"class="btn btn-success">Login</button>
   </form>
 </div><!--/.navbar-collapse -->
 </div>
