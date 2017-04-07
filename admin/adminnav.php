@@ -12,7 +12,7 @@
       <li role="presentation" class="<?php activePage('Admin Home', $title) ?>"><a href="index.php">Admin Home</a></li>
       <li role="presentation" class="<?php echo isset($title) && $title == 'Vehicle Management' ? 'active' : '' ?>"><a href="vehiclemgt.php">Vehicle Management</a></li>
       <li role="presentation" class="<?php echo isset($title) && $title == 'Home Page Management' ? 'active' : '' ?>"><a href="dealmgt.php">Home Page Management</a></li>
-      <li role="presentation" class="<?php echo isset($title) && $title == 'Statistics' ? 'active' : '' ?>"><a href="statistics.php">Statistics</a></li>
+      <li class="disabled" role="presentation" class="<?php echo isset($title) && $title == 'Statistics' ? 'active' : '' ?>"><a href="statistics.php">Statistics</a></li>
     </ul>
     <hr>
   </div>
