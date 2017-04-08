@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['userId']) == false) {
-    header('Location: signin.php');
+    header('Location: ../views/login.php');
 }
   $title = 'Home Page Management';
   include '../views/header.php';
