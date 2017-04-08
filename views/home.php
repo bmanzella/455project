@@ -9,8 +9,8 @@ include 'navbar.php';
 <div class="jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <img style="position:relative" src="../img/logo.png" alt="Logo">
+      <div id="col-centered" class="col-md-6">
+        <img src="../img/logo.png" alt="Logo">
       </div>
     </div>
   </div>
