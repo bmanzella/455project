@@ -1,3 +1,4 @@
+<br>
 <hr>
 <footer>
   <div style="float:none;margin-left:auto;margin-right:auto;width:75%;text-align:center" class="panel panel-default">
