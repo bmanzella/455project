@@ -39,13 +39,14 @@
   if (
     $title == 'Admin Home' ||
     $title == 'Vehicle Management' ||
-    $title == 'Deal Management'
+    $title == 'Deal Management' ||
+    $title == 'Manage Users'
   ) {
     ?>
-    <a class="navbar-brand" href="../views/home.php">AutoMatic - Dealership Management</a>
+    <a class="navbar-brand" href="../views/home.php">AutoMatic</a>
     <?php
   } else {
-    ?><a class="navbar-brand" href="home.php">AutoMatic - Dealership Management</a><?php
+    ?><a class="navbar-brand" href="home.php">AutoMatic </a><?php
   }?>
 </div>
 <div id="navbar" class="navbar-collapse collapse">

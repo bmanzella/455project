@@ -43,3 +43,20 @@ form#userLoggedIn p{
     color: #fff;
 }
 
+#modBtn {
+    float: none;
+    margin: auto;
+    display: inline;
+}
+
+#addBtn button {
+    float: none;
+    margin: auto;
+    display: block;
+}
+
+#register-btn {
+    float: none;
+    margin: auto;
+    display: block;
+}

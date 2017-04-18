@@ -10,10 +10,7 @@ if ($user == false) {
         VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[username]', '$pw');
     
     ");
-    header('Location: ../views/login.php');
+    header('Location: ../admin/usermgt.php');
 } else {
-    header('Location: reguser.php');
+    header('Location: add-user.php');
 }
-
-
-include '../views/footer.php';
