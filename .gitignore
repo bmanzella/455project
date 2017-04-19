@@ -58,4 +58,6 @@ fabric.properties
 # *.ipr
 
 .idea/
+todo.php
+db.php
 # End of https://www.gitignore.io/api/phpstorm
