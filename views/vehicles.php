@@ -64,7 +64,7 @@
                             } else {
                                 echo "Sold on $vehicle[sale_date]";
                             } ?></td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-eye-open"></span> View</a></td>
+                        <td class="text-center"><a class='btn btn-info btn-md' href="#"><span class="glyphicon glyphicon-eye-open"></span> View</a></td>
 
                     </tr>
             <?php  } ?>
