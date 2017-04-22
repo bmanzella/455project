@@ -52,7 +52,7 @@
                 </thead>
                 <?php foreach ($vehicles as $vehicle) { ?>
                     <tr>
-                        <td><?php echo $vehicle["vehicle_id"] ?></td>
+                        <td><?php echo 'V' . sprintf('%07d', $vehicle["vehicle_id"]) ?></td>
                         <td><?php echo $vehicle["year"] ?></td>
                         <td><?php echo $vehicle["make"] ?></td>
                         <td><?php echo $vehicle["model"]?></td>
@@ -64,7 +64,24 @@
                             } else {
                                 echo "Sold on $vehicle[sale_date]";
                             } ?></td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-eye-open"></span> View</a></td>
+                        <td class="text-center">
+                            <form action="vehicle.php?id=<?php echo $vehicle["vehicle_id"] ?>" method="post">
+                                <input type="hidden" name="id" value="<?php echo $vehicle["vehicle_id"] ?>">
+                                <input type="hidden" name="year" value="<?php echo $vehicle["year"] ?>">
+                                <input type="hidden" name="make" value="<?php echo $vehicle["make"] ?>">
+                                <input type="hidden" name="model" value="<?php echo $vehicle["model"] ?>">
+                                <input type="hidden" name="class" value="<?php echo $vehicle["class"] ?>">
+                                <input type="hidden" name="color" value="<?php echo $vehicle["color"] ?>">
+                                <input type="hidden" name="cost" value="<?php echo '$'.number_format($vehicle["cost"], 2)?>">
+                                <input type="hidden" name="status" value="<?php if (!($vehicle["sale_date"])) {
+                                    echo 'For Sale';
+                                } else {
+                                    echo "Sold on $vehicle[sale_date]";
+                                } ?>">
+
+                                <button class='btn btn-info btn-md'><span class="glyphicon glyphicon-eye-open"></span> View</button>
+                            </form>
+                        </td>
 
                     </tr>
             <?php  } ?>
