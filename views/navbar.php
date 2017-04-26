@@ -39,7 +39,7 @@
   if (
     $title == 'Admin Home' ||
     $title == 'Vehicle Management' ||
-    $title == 'Deal Management' ||
+    $title == 'Home Page Management' ||
     $title == 'Manage Users'
   ) {
     ?>
@@ -55,7 +55,7 @@
     if (
       $title == 'Admin Home' ||
       $title == 'Vehicle Management' ||
-      $title == 'Deal Management' ||
+      $title == 'Home Page Management' ||
       $title == 'Manage Users'
     ) {
       ?>
