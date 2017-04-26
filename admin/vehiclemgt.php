@@ -71,12 +71,13 @@ while($row = $result->fetch_assoc()) {
                       echo "Sold on $vehicle[sale_date]";
                   } ?></td>
               <td class="text-center">
-                  <form id="modBtn" action="../scripts/add-vehicle.php?id=<?php echo $vehicle["vehicle_id"] ?>" method="post">
-                  <input type="hidden" name="id" value="<?php echo $vehicle["vehicle_idid"] ?>">
-                  <button class='btn btn-info btn-md' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</button>
+                  <form id="modBtn" action="../scripts/update-vehicle.php?id=<?php echo $vehicle["vehicle_id"] ?>" method="post">
+                  <input type="hidden" name="id" value="<?php echo $vehicle["vehicle_id"] ?>">
+                  <button class='btn btn-info btn-md'><span class="glyphicon glyphicon-edit"></span> Edit</button>
                 </form>
                 <form id="modBtn" action="../scripts/delete-vehicle.php" method="post">
                   <input type="hidden" name="id" value="<?php echo $vehicle["vehicle_id"] ?>">
+                  <input type="hidden" name="cost" value="<?php echo $vehicle["cost"] ?>">
                   <button class="btn btn-danger btn-md" onclick="return confirm('Confirm vehicle deletion?');"><span class="glyphicon glyphicon-remove"></span> Delete</button>
                 </form>
               </td>

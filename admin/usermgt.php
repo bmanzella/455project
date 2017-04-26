@@ -40,7 +40,7 @@ while($row = $result->fetch_assoc()) {
         <button class="btn btn-success btn-md"><span class="glyphicon glyphicon-plus"></span> Add User</button>
     </form>
     <div class="container">
-        <div style="width:100%;margin:auto;float:none" class="row col-md-6 col-md-offset-2 custyle">
+        <div style="width:100%;margin:auto;float:none;" class="row col-md-6 col-md-offset-2 custyle">
             <table class="table table-striped custab">
                 <thead>
                 <tr>
@@ -57,10 +57,12 @@ while($row = $result->fetch_assoc()) {
                     <td><?php echo $user["username"];?></td>
                     <td class="text-center">
                         <form id="modBtn" action="../scripts/add-user.php?id=<?php echo $user["id"] ?>" method="post">
+                            <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
                             <button class='btn btn-info btn-md' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</button>
                         </form>
                         <form id="modBtn" action="../scripts/delete-user.php" method="post">
-                            <button class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+                            <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
+                            <button class="btn btn-danger btn-md" onclick="return confirm('Confirm user deletion?');"><span class="glyphicon glyphicon-remove"></span> Delete</button>
                         </form>
                     </td>
                 </tr>
