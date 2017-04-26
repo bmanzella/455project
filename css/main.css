@@ -32,6 +32,13 @@ form#login input {
     float: left;
     width: 50%;
 }
+
+select#make, select#model, select#class {
+    display: block;
+    float: none;
+    width: 50%;
+}
+
 form#login #loginBtn {
     float: none;
     margin: 0 auto;
@@ -59,4 +66,34 @@ form#userLoggedIn p{
     float: none;
     margin: auto;
     display: block;
+}
+
+ul#indvVehicle.list-group {
+    width: 45%;
+    float: left;
+    margin-left: 5px;
+}
+
+ul#indvVehicleRight.list-group {
+    width: 45%;
+    float: right;
+    margin-right: 5px;
+}
+
+h1#vehicleTitle {
+    float: none;
+    margin: auto;
+    text-align: center;
+}
+
+li#indvVehicleElement.list-group-item h4 {
+    display: inline;
+}
+
+li#indvVehicleElement.list-group-item-success h4 {
+    display: inline;
+}
+
+#success_message {
+    display: none;
 }
