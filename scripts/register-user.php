@@ -1,5 +1,5 @@
 <?php
-require '../scripts/db.php';
+require 'db.php';
 $db = new DB();
 $user = $db->registerUser("SELECT * FROM users WHERE username = '$_POST[username]'");
 

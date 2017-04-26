@@ -9,5 +9,8 @@ if(isset($_SESSION['userId']) == false) {
   include 'adminnav.php';
 
 
-  include '../views/footer.php';
  ?>
+
+<h1>Welcome, <?php echo $_SESSION['first_name'] . ' ' . $_SESSION['last_name'] ?></h1>
+
+<?php include '../views/footer.php'; ?>
