@@ -2,6 +2,15 @@
 $title = 'About';
 include 'header.php';
 include 'navbar.php';
+require '../scripts/db.php';
+$db = new DB();
+
+$result = $db->query("SELECT * FROM suppliers");
+
+$suppliers = [];
+while($row = $result->fetch_assoc()) {
+    $suppliers[] = $row;
+}
 
 ?>
 <div id="aboutHead" class="page-header">
@@ -22,6 +31,14 @@ include 'navbar.php';
     <h2>Customer Focus</h2>
     Our primary concern is the satisfaction of our customers. Our online inventory and website were created to enhance the buying experience for each and every one of our customers. If you have any questions, please feel free to contact us.
     If you don't see the car you are looking for, click on Contact, fill out the form, and our friendly sales staff will let you know when vehicles arrive that match your search! We look forward to serving you!
+    <h2>Suppliers</h2>
+    <?php
+    foreach ($suppliers as $supplier) { ?>
+        <ul>
+            <li><?php echo $supplier['name'] ?> - <?php echo $supplier['address'] ?></li>
+        </ul>
+    <?php }
+    ?>
 </div>
 <br>
 <br>
