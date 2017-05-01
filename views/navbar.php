@@ -40,7 +40,8 @@
     $title == 'Admin Home' ||
     $title == 'Vehicle Management' ||
     $title == 'Home Page Management' ||
-    $title == 'Manage Users'
+    $title == 'Manage Users' ||
+    $title == 'Make an Offer'
   ) {
     ?>
     <a class="navbar-brand" href="../views/home.php">AutoMatic</a>
@@ -56,7 +57,8 @@
       $title == 'Admin Home' ||
       $title == 'Vehicle Management' ||
       $title == 'Home Page Management' ||
-      $title == 'Manage Users'
+      $title == 'Manage Users' ||
+      $title == 'Make an Offer'
     ) {
       ?>
       <li class=""><a href="../views/home.php">Home</a></li>

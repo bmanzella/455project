@@ -45,6 +45,17 @@ $status = $_POST["status"];
         <li class="list-group-item" id="indvVehicleElement">
             <h4>Status: </h4><?php echo $status ?>
         </li>
+        <li class="list-group-item" id="indvVehicleElement">
+            <form action="../scripts/make-offer.php" method="post">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <input type="hidden" name="year" value="<?php echo $year ?>">
+                <input type="hidden" name="make" value="<?php echo $make ?>">
+                <input type="hidden" name="model" value="<?php echo $model ?>">
+                <input type="hidden" name="class" value="<?php echo $class ?>">
+                <input type="hidden" name="cost" value="<?php echo $cost ?>">
+                <button class="btn btn-primary btn-md">Make an Offer</button>
+            </form>
+        </li>
     </ul>
 
 </div>
